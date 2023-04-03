@@ -10,4 +10,3 @@ The page was built using CSS for styling, HTML for structure and Javascript for 
 
 - [Font icons](https://fontawesome.com) (fontawesome)
 - [Favicon](https://icon-icons.com) (icon-icons)
-- [Header icon](https://www.flaticon.com) (flaticon)

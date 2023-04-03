@@ -9,7 +9,7 @@ const colorPicker = document.querySelector(".color_picker");
 const randomButton = document.querySelector(".random_button");
 const clearButton = document.querySelector(".clear_button");
 const eraserButton = document.querySelector(".eraser_button");
-const sizeH2 = document.querySelector(".size_h2");
+const sizeH3 = document.querySelector(".size_h3");
 const sizeBar = document.querySelector(".size_bar");
 
 //Main functions
@@ -23,7 +23,7 @@ function setCurrentColor() {
 }
 function autoSizeGrid() {
   removeCells();
-  sizeH2.textContent = `${curentGridSize}x${curentGridSize}`;
+  sizeH3.textContent = `${curentGridSize}x${curentGridSize}`;
   gridContainer.setAttribute(
     "style",
     `grid-template-columns: repeat(${curentGridSize}, 1fr);

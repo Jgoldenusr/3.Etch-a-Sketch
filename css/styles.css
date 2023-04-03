@@ -8,6 +8,12 @@ html {
 *::after {
   box-sizing: inherit;
 }
+h3 {
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+  margin: 0px;
+}
 body {
   height: 100%;
   margin: 0px 0px;
@@ -18,29 +24,48 @@ body {
 }
 header {
   display: flex;
+  flex: 0 0 auto;
   padding: min(1rem, 5vh);
+  height: min(75px, 20%);
+  margin-bottom: 20px;
   justify-content: center;
   align-items: center;
-  height: min(75px, 25%);
-  font-size: min(50px, 5vh);
-  background-color: #14279b;
-  margin-bottom: 20px;
-  box-shadow: 0px 2px 0px 1px white;
-}
-.header_span {
-  text-align: center;
+  font-size: xx-large;
   font-weight: bold;
+  box-shadow: 0px 2px 0px 1px white;
+  background-color: #14279b;
   color: #e6e6e6;
+}
+.header_span,
+.footer_span {
+  text-align: center;
   user-select: none;
 }
-.mainlogo {
-  width: 7vh;
-  height: 100%;
-  margin: auto 1%;
+.header_icon {
+  color: #e6e6e6;
+  font-size: xx-large;
+  margin-right: 1vh;
 }
-.logo {
-  width: inherit;
-  height: inherit;
+footer {
+  display: flex;
+  flex: 0 0 auto;
+  height: min(75px, 20%);
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  box-shadow: 0px -2px 0px 1px white;
+  background-color: #14279b;
+  color: #e6e6e6;
+}
+.footer_icon {
+  color: #e6e6e6;
+  font-size: x-large;
+  margin-right: 1vh;
+}
+.footer_icon:hover {
+  color: white;
+  animation: spin 0.5s linear;
 }
 .main_wrapper {
   display: flex;
@@ -100,52 +125,19 @@ header {
 .cell {
   background-color: white;
 }
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: min(75px, 25%);
-  background-color: #14279b;
-  box-shadow: 0px -2px 0px 1px white;
-  margin-top: 20px;
-}
-h1,
-h2,
-h3 {
-  text-align: center;
-  user-select: none;
-  cursor: pointer;
-}
-h1 {
-  font-size: min(32px, 5vh);
-  margin: 0px;
-}
-h2 {
-  font-size: min(24px, 5vh);
-  margin: 0px;
-}
-h3 {
-  color: #e6e6e6;
-  font-size: min(20.8px, 5vh);
-}
-img,
-li {
-  user-select: none;
-}
-.fab {
-  margin: auto 0.7vw;
-  color: #e6e6e6;
-  font-size: min(30px, 6vh);
-}
-.fab:hover {
-  color: white;
-  font-size: min(35px, 7.5vh);
-}
 .clear {
   clear: both;
 }
 .shady {
   box-shadow: 2px 2px 2px 1px grey;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 @font-face {
   font-family: "TenbyFive";
